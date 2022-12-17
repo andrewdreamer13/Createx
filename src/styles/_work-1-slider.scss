@@ -1,0 +1,123 @@
+
+
+.work-1-slider {
+  .slider-buttons {
+     position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+
+  .slider-button {
+    background-color: rgba($white, 1);
+    transition: all .3s;
+
+    &:hover {
+      background-color: rgba($orange, 1);
+      transition: all .3s;
+    }
+  }
+
+  .slider-button.swiper-button-disabled {
+    background-color: rgba($white, .4);
+
+    &:hover .slider-svg {
+      fill: $gray;
+      transition: all .3s;
+    }
+  }
+}
+.work-1-slider__img-box {
+  width: 100%;
+  height: 500px;
+}
+.work-1-slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.work-1-nav{
+ margin-top: 20px;
+
+ .swiper-slide{
+  opacity: .6;
+  transition: all .3s;
+  cursor: pointer;
+  &-thumb-active{
+   opacity: 1;
+    transition: all .3s;
+  }
+  &:hover{
+    opacity: 1;
+    transition: all .3s;
+  }
+ }
+}
+.work-1-nav__img-box {
+  width: 100px;
+  height: 100px;
+}
+.work-1-nav__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+@media (max-width:768px){
+  .work-1-slider {
+    .slider-buttons {
+       position: absolute;
+      top:10px;
+      left: 80%;
+      transform: translateY(0);
+      width: 106px;
+      justify-content: space-between;
+      padding:0;
+      z-index: 10;
+    }
+  }
+  .work-1-slider__img-box {
+    height: 400px;
+  }
+  .work-1-nav__img-box {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width:600px){
+  .work-1-slider {
+    .slider-buttons {
+      display: none;
+    }
+  }
+  .work-1-slider__img-box {
+    height: 300px;
+  }
+  .work-1-nav__img-box {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width:500px){
+  .work-1-slider__img-box {
+    height: 250px;
+  }
+  .work-1-nav__img-box {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width:400px){
+  .work-1-slider__img-box {
+    height: 200px;
+  }
+  .work-1-nav__img-box {
+    width: 50px;
+    height: 50px;
+  }
+}

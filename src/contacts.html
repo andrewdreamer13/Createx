@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Contacts</title>
+</head>
+
+<body>
+  <header class="header header--secondery" id="top">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="index.html">
+          <svg width="130px" height="22px">
+            <use xlink:href="img/svg/sprite.svg#logo"></use>
+          </svg>
+        </a>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link" href="about.html">About Us</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="services.html">Services</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="work.html">Work</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="news.html">News</a></li>
+            <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__contacts">
+          <a class="header__contacts-link" href="tel:4055550128">
+            <div class="header__contacts-svg-box">
+              <svg class="header__contacts-svg" width="130px" height="22px">
+                <use xlink:href="img/svg/sprite.svg#header-phone"></use>
+              </svg>
+            </div>
+            <div class="header__contacts-content-box">
+              <span class="header__contacts-title">Call us</span>
+              <span class="header__contacts-content">(405) 555-0128</span>
+            </div>
+          </a>
+          <a class="header__contacts-link" href="mailto:hello@createx.com">
+            <div class="header__contacts-svg-box">
+              <svg class="header__contacts-svg" width="130px" height="22px">
+                <use xlink:href="img/svg/sprite.svg#header-chat"></use>
+              </svg>
+            </div>
+            <div class="header__contacts-content-box">
+              <span class="header__contacts-title">Talk to us</span>
+              <span class="header__contacts-content">hello@createx.com</span>
+            </div>
+          </a>
+        </div>
+
+        <button class="burger" aria-label="menu-button">
+          <span class="burger__span burger__span--one"></span>
+          <span class="burger__span burger__span--two"></span>
+          <span class="burger__span burger__span--three"></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+  <section class="hero contacts-hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="breadcrumbs">
+          <a class="breadcrumbs__link" href="index.html">Homepage</a>
+          <span>/</span>
+          <a class="breadcrumbs__link breadcrumbs__link--active">contacts</a>
+        </div>
+        <h1 class="hero-title">contacts</h1>
+        <p class="hero-descr">
+          Contact us for all your construction needs. We always welcome any questions and comments.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="contact-us">
+    <div class="container">
+      <h2 class="section-title">Contact us</h2>
+      <p class="section-descr">
+        Please complete the form. Detailed information will help us to make a tuned offer.
+      </p>
+      <div class="contact-us__inner">
+        <div class="contact-us__img-box">
+          <img class="contact-us__img" src="img/contact-us-img.jpg" alt="contact image">
+        </div>
+        <!-- Form -->
+        <form class="contact-us__form" action="#">
+
+          <div class="contact-us__input-box">
+            <label class="contact-us__label">Name*</label>
+            <input class="form__input contact-us__input" type="text" required placeholder="Your name">
+          </div>
+          <!-- Select 1 -->
+          <div class="contact-us__input-box">
+            <label class="contact-us__label">I am interested in</label>
+            <div class="contact-us__select">
+              <div class="contact-us__select-header">
+                <span class="contact-us__select-current">Interior Design</span>
+                <svg class="contact-us__svg">
+                  <use xlink:href="img/svg/sprite.svg#select-arrow"></use>
+                </svg>
+              </div>
+              <div class="contact-us__select-body">
+                <div class="contact-us__select-item">Interior Design</div>
+                <div class="contact-us__select-item">Construction</div>
+                <div class="contact-us__select-item">Project Development</div>
+                <div class="contact-us__select-item">Repairs</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-us__input-box">
+            <label class="contact-us__label">Phone*</label>
+            <input class="form__input contact-us__input" type="tel" required placeholder="Your phone number">
+          </div>
+
+          <!-- Select 2 -->
+          <div class="contact-us__input-box">
+            <label class="contact-us__label">Location</label>
+            <div class="contact-us__select">
+              <div class="contact-us__select-header">
+                <span class="contact-us__select-current">New York</span>
+                <svg class="contact-us__svg">
+                  <use xlink:href="img/svg/sprite.svg#select-arrow"></use>
+                </svg>
+              </div>
+              <div class="contact-us__select-body">
+                <div class="contact-us__select-item" value="New_York">New York</div>
+                <div class="contact-us__select-item" value="New_Jersey">New Jersey</div>
+                <div class="contact-us__select-item" value="San_Francisco">San Francisco</div>
+                <div class="contact-us__select-item" value="Berlin">Berlin</div>
+                <div class="contact-us__select-item" value="Kiyiv">Kyiv</div>
+                <div class="contact-us__select-item" value="Kharkiv">Kharkiv</div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="contact-us__input-box">
+            <label class="contact-us__label">Email*</label>
+            <input class="form__input contact-us__input" type="email" required placeholder="Your working email">
+          </div>
+          <!-- Fieldset -->
+          <div class="contact-us__input-box">
+            <fieldset class="contact-us__fieldset">
+              <legend class="contact-us__legend">Preferred contact method</legend>
+
+              <label class="contact-us__fieldset-label" for="phone">
+                <input class="contact-us__radio" type="radio" id="phone" name="method" value="phone">
+                <span class="contact-us__radio-clone" id="first-clone"></span>
+                <span class="contact-us-descr">Phone</span>
+              </label>
+
+              <label class="contact-us__fieldset-label" for="email">
+                <input class="contact-us__radio" type="radio" id="email" name="method" value="email">
+                <span class="contact-us__radio-clone" id="second-clone"></span>
+                <span class="contact-us-descr">Email</span>
+              </label>
+
+              <label class="contact-us__fieldset-label" for="viber">
+                <input class="contact-us__radio" type="radio" id="viber" name="method" value="viber">
+                <span class="contact-us__radio-clone" id="third-clone"></span>
+                <span class="contact-us-descr">Viber</span>
+              </label>
+
+            </fieldset>
+          </div>
+
+          <div class=" contact-us__area-box">
+            <label class="contact-us__label" for="">Message*</label>
+            <textarea class="form__area contact-us__area" placeholder="Your message"></textarea>
+          </div>
+          <label class="contact-us__checkbox-box">
+            <input class="contact-us__checkbox" id="contact-us-checkbox" type="checkbox">
+            <span class="contact-us__checkbox-clone"></span>
+            <span class="contact-us__agree-text">I agree to receive communications from Createx Construction
+              Bureau.</span>
+          </label>
+          <button class="contact-us__button orange-button large-button" type="submit">send request</button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="offices">
+    <div class="container">
+      <h2 class="section-title">Our offices</h2>
+      <p class="section-descr">Give us a call, send us a note or visit our office. We can’t wait to hear from&nbsp;you!
+      </p>
+      <ul class="offices__list">
+
+        <li class="offices__list-item value value-1">
+          <h4 class="item-title">New York, USA</h4>
+          <address class="offices__info">
+            <div class="offices__address-item offices__address-item-address">
+              <span class="offices__address">8502 Preston Rd. Inglewood, New York 98380</span>
+            </div>
+            <div class="offices__address-item offices__address-item-map">
+              <button class="offices__link-map modal-button" data-path="map-1">See on the map</button>
+            </div>
+            <div class="offices__address-item offices__address-item-tel">
+              <span class="offices__tel">Call:</span>
+              <a class="offices__link-tel" href="tel:4055550128">(405)555-0128</a>
+            </div>
+            <div class="offices__address-item offices__address-item-mail">
+              <span class="offices__email">Email:</span>
+              <a class="offices__link-mail" href="mailto:Email:hello@createx.com">hello@createx.com</a>
+            </div>
+            <div class="offices__address-item offices__address-item-schedule">
+              <span class="offices__schedule">Schedule:</span>
+              <span class="offices__schedule-info">Mon - Fri 9:00 - 18:00</span>
+            </div>
+          </address>
+        </li>
+
+        <li class="offices__list-item">
+          <div class="divider">
+            <img class="divider__svg" src="img/divider.svg" alt="divider image">
+          </div>
+        </li>
+
+        <li class="offices__list-item value value-2">
+          <h4 class="item-title">New Jersey, USA</h4>
+          <address class="offices__info">
+            <div class="offices__address-item offices__address-item-address">
+              <span class="offices__address">2464 Royal Ln. Mesa, New Jersey 45463</span>
+            </div>
+            <div class="offices__address-item offices__address-item-map">
+              <button class="offices__link-map modal-button" data-path="map-2">See on the map</button>
+            </div>
+            <div class="offices__address-item offices__address-item-tel">
+              <span class="offices__tel">Call:</span>
+              <a class="offices__link-tel" href="tel:8085550111">(808) 555-0111</a>
+            </div>
+            <div class="offices__address-item offices__address-item-mail">
+              <span class="offices__email">Email:</span>
+              <a class="offices__link-mail" href="mailto:Email:hello@createx.com">hello@createx.com</a>
+            </div>
+            <div class="offices__address-item offices__address-item-schedule">
+              <span class="offices__schedule">Schedule:</span>
+              <span class="offices__schedule-info">Mon - Fri 9:00 - 18:00</span>
+            </div>
+          </address>
+        </li>
+
+        <li class="offices__list-item">
+          <div class="divider">
+            <img class="divider__svg" src="img/divider.svg" alt="divider image">
+          </div>
+        </li>
+
+        <li class="offices__list-item value value-2">
+          <h4 class="item-title">San Francisco, USA</h4>
+          <address class="offices__info">
+            <div class="offices__address-item offices__address-item-address">
+              <span class="offices__address">Hollister avenu 34  San-Fransisco 98380</span>
+            </div>
+            <div class="offices__address-item offices__address-item-map">
+              <button class="offices__link-map modal-button" data-path="map-3">See on the map</button>
+            </div>
+            <div class="offices__address-item offices__address-item-tel">
+              <span class="offices__tel">Call:</span>
+              <a class="offices__link-tel" href="tel:5055550125">(505) 555-0125</a>
+            </div>
+            <div class="offices__address-item offices__address-item-mail">
+              <span class="offices__email">Email:</span>
+              <a class="offices__link-mail" href="mailto:Email:hello@createx.com">hello@createx.com</a>
+            </div>
+            <div class="offices__address-item offices__address-item-schedule">
+              <span class="offices__schedule">Schedule:</span>
+              <span class="offices__schedule-info">Mon - Fri 10:00 - 19:00</span>
+            </div>
+          </address>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  <section class="find">
+    <div class="container">
+      <h2 class="section-title">Find us at</h2>
+      <div class="find__social-icons">
+        <a class="find__social-link" href="https://www.whatsapp.com">
+          <svg class="find__social-svg" width="24px" height="24px">
+            <use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+        <a class="find__social-link" href="https://www.messenger.com">
+          <svg class="find__social-svg" width="24px" height="24px">
+            <use xlink:href="img/svg/sprite.svg#mesage"></use>
+          </svg>
+        </a>
+        <a class="find__social-link" href="https://www.facebook.com">
+          <svg class="find__social-svg" width="24px" height="24px">
+            <use xlink:href="img/svg/sprite.svg#facebook"></use>
+          </svg>
+        </a>
+        <a class="find__social-link" href="https://twitter.com">
+          <svg class="find__social-svg" width="24px" height="24px">
+            <use xlink:href="img/svg/sprite.svg#twitter"></use>
+          </svg>
+        </a>
+        <a class="find__social-link" href="https://www.youtube.com">
+          <svg class="find__social-svg" width="24px" height="24px">
+            <use xlink:href="img/svg/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  @@include('parts/modal-window.html')
+  @@include('parts/footer.html')
+  <script src="libs/swiper.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

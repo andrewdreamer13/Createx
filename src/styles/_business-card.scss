@@ -1,0 +1,201 @@
+
+.business-card {
+  width: 100%;
+  padding: 0 0 240px 0;
+  background-color: $white;
+  background-image: url('../img/business-card-bg.png');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.business-card__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.business-card__img-box {
+  max-width: 540px;
+  // height: 580px;
+  height: auto;
+transform: translate(10px,130px);
+}
+.business-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:4px;
+ 
+}
+.business-card__content {
+  position: relative;
+  max-width: 735px;
+  // min-height: 570px;
+  padding: 80px 90px 80px 135px;
+  background-color: $white;
+  box-shadow:
+   0 0 5px rgba(30, 33, 44,.1),
+   0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+   0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+   0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+   0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+ transform: translateX(-15px);
+}
+.business-card__descr {
+  position: relative;
+  margin-bottom: 50px;
+
+  &::before{
+    content:'';
+    position: absolute;
+    left: -58px;
+    top: 0;
+    width: 28px;
+    height: 20px;
+    background-image: url('../img/braces.svg');
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+}
+.business-card__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color:$title-color;
+  
+}
+.business-card__text:not(:last-child){
+  margin-bottom: 30px;
+}
+.business-card__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.business-card__name-box {
+  padding: 13px 0;
+}
+.business-card__name {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  color:$title-color;
+}
+.business-card__bureau {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color:$color-text;
+}
+.business-card__signature-box {
+  width: 100px;
+  height: 68px;
+}
+.business-card__svg {
+  width: 100%;
+  height: 100%;
+  fill:$orange;
+}
+  @media(max-width:1260px){
+  .business-card__content {
+    padding: 50px 50px 50px 100px;
+    max-width: 635px;
+  }
+ }
+ @media(max-width:1100px){
+  .business-card__content {
+    // transform: translateX(0);
+    padding: 30px 30px 30px 90px;
+    max-width: 535px;
+  }
+}
+@media(max-width:1000px){
+  .business-card {
+   padding: 120px 0 120px 0;
+  }
+  .business-card__img-box {
+    transform: translate(10px,-120px);
+  }
+}
+@media(max-width:850px){
+  .business-card {
+    padding: 50px 0 120px 0;
+   }
+  .business-card__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .business-card__img-box {
+    max-width: 340px;
+    transform: translate(0,50px);
+  }
+  .business-card__content {
+     transform: translateX(0);
+    padding: 20px 20px 20px 80px;
+    max-width: 535px;
+    margin-left: 50px;
+  }
+  .business-card__text{
+    font-size: 18px;
+  }
+}
+@media(max-width:600px){
+  .business-card {
+    padding: 50px 0 80px 0;
+   }
+  .business-card__text{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .business-card__descr {
+    margin-bottom: 30px;
+  
+    &::before{
+      content:'';
+      position: absolute;
+      left: -25px;
+      top: 0;
+      width: 14px;
+      height: 10px;
+      background-image: url('../img/braces.svg');
+     
+    }
+  }
+  .business-card__content {
+    padding: 20px 20px 20px 40px;
+  }
+  .business-card__name {
+    font-size: 15px;
+  }
+  .business-card__bureau {
+    font-size: 13px;
+  }
+  .business-card__signature-box {
+    width: 83px;
+    height: 57px;
+  }
+}
+@media(max-width:450px){
+  .business-card {
+    padding: 50px 0 50px 0;
+   }
+  .business-card__img-box {
+    max-width: 240px;
+    margin-bottom: 20px;
+    transform: translate(0,0);
+  }
+  .business-card__content {
+   margin-left: 0;
+ }
+ .business-card__info {
+  flex-direction: column;
+}
+}
